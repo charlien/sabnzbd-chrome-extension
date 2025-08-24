@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "SABnzbd NZB Downloader",
+  "version": "1.0",
+  "description": "Send NZB file URLs directly to your local SABnzbd server",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "notifications",
+    "alarms"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SABnzbd Monitor"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+} 
